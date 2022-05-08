@@ -12,6 +12,7 @@ public class BinSearch {
             int pc = (pl + pr) / 2; //중앙요소의 인덱스
             if (a[pc] == key) {
                 return pc; //검색성공
+
             } else if (a[pc] < key) {
                 pl = pc + 1; //검색범위를 뒤쪽 절반으로 좁힘
             } else {
