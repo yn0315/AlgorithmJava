@@ -40,5 +40,7 @@ public class ReverseCopyArray {
         }
 
         copy(a,b);
+
+        sc.close();
     }
 }

@@ -81,6 +81,9 @@ public class YMD {
 
         YMD d2 = date.before(n);
         System.out.printf("%d일 앞의 날짜는 %d년 %d월 %d일입니다.\n", n, d2.y, d2.m, d2.d);
+
+        stdIn.close();
+
     }
 
 

@@ -41,6 +41,8 @@ public class DayOfYear {
             System.out.println("한 번 더 할까요? (1. 예 / 2. 아니오)");
             retry = sc.nextInt();
         }while (retry == 1);
+
+        sc.close();
     }
 
 

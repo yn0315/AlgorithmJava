@@ -61,6 +61,6 @@ public class CardConvRevQuiz {
 
         }while (retry == 1);
 
-
+        sc.close();
     }
 }

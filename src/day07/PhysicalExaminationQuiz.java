@@ -82,5 +82,6 @@ public class PhysicalExaminationQuiz {
             System.out.println();
         }
 
+        sc.close();
     }
 }

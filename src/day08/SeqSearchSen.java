@@ -45,7 +45,6 @@ public class SeqSearchSen {
             System.out.println(ky + "은(는) x[" + idx + "]에 있습니다.");
         }
 
-
-
+        sc.close();
     }
 }

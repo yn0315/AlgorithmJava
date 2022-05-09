@@ -52,6 +52,6 @@ public class CardConvRev {
 
         }while (retry == 1);
 
-
+        sc.close();
     }
 }

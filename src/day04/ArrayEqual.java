@@ -43,5 +43,7 @@ public class ArrayEqual {
         }
 
         System.out.println("배열 a 와 b 는 " + (equals(a,b)? "같습니다.":"같지 않습니다."));
+
+        sc.close();
     }
 }

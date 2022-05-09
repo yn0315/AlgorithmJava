@@ -47,6 +47,6 @@ public class SearchIdxQuiz {
             System.out.println("찾는 값은 idx["+ idx[i] + "]에 있습니다.");
         }
 
-
+        sc.close();
     }
 }

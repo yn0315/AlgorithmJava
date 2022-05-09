@@ -41,5 +41,7 @@ public class CopyArray {
         System.out.println(Arrays.toString(a));
 
         copy(a,b);
+
+        sc.close();
     }
 }
