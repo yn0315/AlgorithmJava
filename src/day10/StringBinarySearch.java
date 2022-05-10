@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 //문자열의 배열(Java의 키워드)에서 검색
+//자연정렬된 배열에서 검색하기(a->b->c순)
 
 public class StringBinarySearch {
     public static void main(String[] args) {
