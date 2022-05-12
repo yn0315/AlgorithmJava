@@ -45,7 +45,7 @@ public class IntStackTester {
                     }
                     break;
 
-                case 4://덤프
+                case 4://덤프 -> 모든 데이터를 표시하는 메서드 바닥에서 꼭대기 순
                     s.dump();
                     break;
 
