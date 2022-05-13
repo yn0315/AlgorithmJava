@@ -29,5 +29,29 @@ public class IntQueue {
         }
     }
 
-    
+    public int enque(int x) throws OverflowIntQueueException {
+        if(num >= max) {
+            throw new OverflowIntQueueException(); //큐가 가득참
+        }
+        que[rear++] = x;
+        num++;
+        if(rear == max) {
+            rear = 0;
+        }
+        return x;
+    }
+
+    public int deque() throws EmptyIntQueueException {
+        if(num <= 0) {
+            throw new EmptyIntQueueException(); //큐가 비어있음
+        }
+        int x = que[front++];
+        num--;
+        if(front == max) {
+            front = 0;
+        }
+        return x;
+    }
+
+
 }
