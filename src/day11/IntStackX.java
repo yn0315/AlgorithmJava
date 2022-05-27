@@ -117,6 +117,63 @@ public class IntStackX {
         }
     }
 
+    //스택 용량 반환(A와 B의 합계)
+    public int capacity() {
+        return max;
+    }
+
+    //스택에 쌓여있는 데이터 수를 반환
+    public int size(AorB sw) {
+        switch (sw) {
+            case StackA:
+                return ptrA;
+            case StackB:
+                return max - ptrB - 1;
+        }
+        return 0;
+    }
+
+    //스택이 비어있는가?
+    public boolean isEmpty(AorB sw) {
+        switch (sw) {
+            case StackA:
+                return ptrA <= 0;
+            case StackB:
+                return ptrB >= max - 1;
+        }
+        return false;
+    }
+
+    //스택이 가득 찼는가?
+    public boolean isFull (AorB sw) {
+        return ptrA >= ptrB + 1;
+    }
+
+    //스택 안의 데이터를 바닥-> 꼭대기 차례로 나타냄
+    public void dump(AorB sw) {
+        switch (sw) {
+            case StackA:
+                if(ptrA <= 0)
+                    System.out.println("스택이 비었습니다.");
+                else {
+                    for (int i = 0; i < ptrA; i++) {
+                        System.out.print(stk[i] + " ");
+                    }
+                    System.out.println();
+                }
+                break;
+            case StackB:
+                if(ptrB >= max - 1)
+                    System.out.println("스택이 비었습니다.");
+                else {
+                    for (int i = max - 1; i > ptrB; i--) {
+                        System.out.print(stk[i] + " ");
+                    }
+                    System.out.println();
+                }
+                break;
+        }
+    }
 
 
 
