@@ -265,6 +265,7 @@ public class IntStackX {
                     System.out.println("비어" + (s.isEmpty(sw) ? "있습니다." : "있지 않습니다."));
                     System.out.println("가득 " + (s.isFull(sw) ? "차 있습니다." : "차 있지 않습니다."));
 //                    System.out.println(Arrays.toString(s.stk));//여기서는 팝한 데이터가 왜 전부 뜨는걸까
+                    //팝은 실제로 삭제하는 게 아니라 ptr만 건드린 것이므로 실제 데이터가 날아간게 아님 푸시로 덮어씌워지는 거
 
             }//end switch
         }

@@ -1,7 +1,7 @@
 package day12;
 
 
-public class IntQueue {
+public class IntQueue {//링버퍼
     private int max; //큐의 용량
     private int front; //첫번째 요소 커서
     private int rear; //마지막 요소 커서
@@ -35,7 +35,7 @@ public class IntQueue {
         }
         que[rear++] = x;
         num++;
-        if(rear == max) {
+        if(rear == max) {//데이터가 꽉 차면 rear를 0으로 맞춤
             rear = 0;
         }
         return x;
@@ -47,7 +47,7 @@ public class IntQueue {
         }
         int x = que[front++];
         num--;
-        if(front == max) {
+        if(front == max) {//front가 max랑 같다는 건 데이터가 다 빠졌다는 거니까 0으로 맞춤
             front = 0;
         }
         return x;
@@ -64,7 +64,7 @@ public class IntQueue {
     //큐에서 x를 검색하여 인덱스(찾지 못하면 -1)를 반환
     public int indexOf(int x) {
         for (int i = 0; i < num; i++) {
-            int idx = (i + front) % max; //검색성공
+            int idx = (i + front) % max; //검색성공//front와 rear의 배열인덱스가 이어지지 않기 때문에 이렇게 작성
             if(que[idx] == x) {
                 return idx;
             }
