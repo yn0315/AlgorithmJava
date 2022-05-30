@@ -109,5 +109,14 @@ public class IntQueue {
         }
     }
 
+    //임의의 데이터 검색, 인덱스 말고 몇 번째 자리인지 반환, 없으면 0반환
+    public int search(int x) {
+        for (int i = 0; i < num; i++) {
+            if(que[(i + front) % max] == x)
+                return i + 1;//검색성공
+        }
+        return 0;//검색실패
+    }
+
 
 }
