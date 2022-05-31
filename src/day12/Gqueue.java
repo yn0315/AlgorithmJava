@@ -106,7 +106,7 @@ public class Gqueue<E> {
             System.out.println("큐가 비었습니다.");
         else {
             for (int i = 0; i < num; i++) {
-                System.out.println(que[(i + front) % max] + " ");
+                System.out.print(que[(i + front) % max].toString() + " ");///////////////////
             }
             System.out.println();
         }
@@ -115,7 +115,7 @@ public class Gqueue<E> {
     //임의의 데이터 검색, 인덱스 말고 몇 번째 자리인지 반환, 없으면 0반환
     public int search(E x) {
         for (int i = 0; i < num; i++) {
-            if(que[(i + front) % max] == x) 
+            if(que[(i + front) % max].equals(x))
                 return i + 1;
         }
         return 0;
