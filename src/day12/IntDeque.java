@@ -142,7 +142,7 @@ public class IntDeque {
             System.out.print(que[(i + front) % max] + " ");
         }System.out.println();
     }
-    
+
 //    Deque
 
 
