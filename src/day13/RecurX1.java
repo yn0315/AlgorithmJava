@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RecurX1 {
     //꼬리재귀가 없는 재귀함수
-    
+
     //꼬리재귀를 제거했습니다
     static void recur(int n) {
         while (n > 0) {
