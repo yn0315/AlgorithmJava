@@ -10,7 +10,7 @@ public class RecurX1 {
         while (n > 0) {
             recur(n - 1);
             System.out.println(n);
-            n = n -2;
+            n = n -2; //recur(n - 2) 대신 n에 n - 2 대입하여 처음으로 돌아가 반복되게 함
         }
     }
 
