@@ -7,10 +7,11 @@ public class EuclidGCD {
     //유클리드 호제법으로 최대공약수 구하기
     //정수 x,y의 최대공약수를 구하여 반환
     static int gcd(int x, int y) {
-        if(y == 0) {
-            return x;
+
+        if(y == 0) {//나머지가 0이므로
+            return x;//x는 최대공약수가 됨
         }else {
-            return gcd(y, x % y);
+            return gcd(y, x % y);//0이 아닐경우 반복
         }
     }
 
